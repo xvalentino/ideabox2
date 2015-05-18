@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-
+# Use simplecov to check test coverage
+gem 'simplecov', :require => false, :group => :test
+# Use rspec to test
 gem 'rspec-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
