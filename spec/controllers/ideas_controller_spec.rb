@@ -103,14 +103,16 @@ RSpec.describe IdeasController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        {title: "new title", body: "new body", quality: 1}
       }
 
       it "updates the requested idea" do
         idea = Idea.create! valid_attributes
+        expect(idea.title).to eq(valid_attributes[:title])
         put :update, {:id => idea.to_param, :idea => new_attributes}, valid_session
         idea.reload
-        skip("Add assertions for updated state")
+        expect(idea.title).to eq(new_attributes[:title])
+        expect(idea.title).not_to eq(valid_attributes[:title])
       end
 
       it "assigns the requested idea as @idea" do
