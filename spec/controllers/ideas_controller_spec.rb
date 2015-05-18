@@ -24,11 +24,11 @@ RSpec.describe IdeasController, type: :controller do
   # Idea. As you add validations to Idea, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    { title: "valid title", body: "valid body", quality: "0"}
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    {body:'', title:'', quality:''}
   }
 
   # This should return the minimal set of values that should be in the session
