@@ -10,7 +10,11 @@ $( document ).ready(function() {
     })
     .always(function() {
       $idea.remove();
-      $('#flash_message').hide().fadeIn(1000).then.remove();
+      $('#deleted').slideDown(function() {
+        setTimeout(function() {
+          $('#deleted').slideUp();
+        }, 1000);
+      });
     });
   });
 });
