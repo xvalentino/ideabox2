@@ -1,3 +1,15 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
+
+  $('tbody tr .idea-destroy').on('click', function() {
+    $idea = $(this).parent();
+    ideaId =  $idea.data("id");
+
+    $.ajax({
+      url: '/ideas/' + ideaId,
+      type: 'DELETE'
+      })
+    .always(function() {
+      $idea.remove();
+    });
+  });
 });
