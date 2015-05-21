@@ -501,8 +501,8 @@
         null,
         null,
         null,
-        null,
         1,
+        null,
         1,
         8,
         null,
@@ -538,13 +538,27 @@
         1,
         null,
         1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/VLS/Dev/turing/4module/1week/ideabox2/app/models/idea.rb": [
         1,
         1,
+        null,
         1,
         1,
+        null,
+        1,
+        null,
+        1,
+        20,
+        null,
         null
       ],
       "/Users/VLS/Dev/turing/4module/1week/ideabox2/spec/requests/ideas_spec.rb": [
@@ -639,9 +653,6 @@
         null,
         null,
         null,
-        null,
-        null,
-        1,
         1,
         1,
         1,
@@ -696,6 +707,6 @@
         null
       ]
     },
-    "timestamp": 1432195086
+    "timestamp": 1432198326
   }
 }
