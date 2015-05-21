@@ -550,8 +550,15 @@
       "/Users/VLS/Dev/turing/4module/1week/ideabox2/app/models/idea.rb": [
         1,
         1,
+        null,
         1,
         1,
+        null,
+        1,
+        null,
+        1,
+        20,
+        null,
         null
       ],
       "/Users/VLS/Dev/turing/4module/1week/ideabox2/spec/requests/ideas_spec.rb": [
@@ -700,6 +707,6 @@
         null
       ]
     },
-    "timestamp": 1432197198
+    "timestamp": 1432198326
   }
 }
