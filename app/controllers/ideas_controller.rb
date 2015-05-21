@@ -47,11 +47,11 @@ class IdeasController < ApplicationController
     respond_to do |format|
       format.json { render :json => {:message => "Success"} }
     end
-
   end
 end
 
 private
+
 def set_idea
   @idea = Idea.find(params[:id])
 end
