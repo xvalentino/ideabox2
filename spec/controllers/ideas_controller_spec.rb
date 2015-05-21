@@ -24,11 +24,11 @@ RSpec.describe IdeasController, type: :controller do
   # Idea. As you add validations to Idea, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    { title: "valid title", body: "valid body", quality: "0"}
+    { title: "valid title", body: "valid body"}
   }
 
   let(:invalid_attributes) {
-    {body:'', title:'', quality:''}
+    {body:'', title:''}
   }
 
   # This should return the minimal set of values that should be in the session
@@ -103,7 +103,7 @@ RSpec.describe IdeasController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
-        {title: "new title", body: "new body", quality: 1}
+        {title: "new title", body: "new body"}
       }
 
       it "updates the requested idea" do
