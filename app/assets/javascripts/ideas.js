@@ -1,7 +1,7 @@
 $( document ).ready(function() {
   $('tbody tr .idea-destroy').on('click', function() {
     $idea = $(this).parent();
-    ideaId =  $idea.data("id");
+    ideaId =  $idea.data('id');
 
 
     $.ajax({
