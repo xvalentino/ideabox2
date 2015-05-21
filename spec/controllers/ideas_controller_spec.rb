@@ -147,14 +147,8 @@ RSpec.describe IdeasController, type: :controller do
     it "destroys the requested idea" do
       idea = Idea.create! valid_attributes
       expect {
-        delete :destroy, {:id => idea.to_param}, valid_session
+        delete :destroy, format: :json, id: idea.id
       }.to change(Idea, :count).by(-1)
-    end
-
-    it "redirects to the ideas list" do
-      idea = Idea.create! valid_attributes
-      delete :destroy, {:id => idea.to_param}, valid_session
-      expect(response).to redirect_to(ideas_url)
     end
   end
 
